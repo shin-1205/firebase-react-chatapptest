@@ -99,7 +99,7 @@ function ChatRoom() {
     return (
         <>
             <main>
-                {messages && messages.reverse().map( (msg, index) => <ChatMessage key={ index } message={ msg } /> )}
+                {messages && messages.map( (msg, index) => <ChatMessage key={ index } message={ msg } /> )}
            
                 <div></div>
            
