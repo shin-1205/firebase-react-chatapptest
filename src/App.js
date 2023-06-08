@@ -101,7 +101,7 @@ function ChatRoom() {
             <main>
                 {messages && messages.reverse().map( (msg, index) => <ChatMessage key={ index } message={ msg } /> )}
            
-                <div ref={dummy}></div>
+                <div></div>
            
             </main>
 
@@ -111,7 +111,7 @@ function ChatRoom() {
                     onChange={(e) => setFormValue(e.target.value)}
                 />
 
-                <button type="submit">㌰</button>
+                <button type="submit">送信</button>
             </form>
         </>
     );
